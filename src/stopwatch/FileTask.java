@@ -2,8 +2,22 @@ package stopwatch;
 
 import java.io.*;
 
+/**
+ * The FileTask for running task
+ * 
+ * @author Kwanwan Tantichartkul
+ * @version 1.0
+ * @since 2018.02.22
+ */
 public class FileTask {
 
+	/**
+	 * Reading the task by using FileReader and append to String.
+	 * 
+	 * @param filename
+	 *            is directory or filename that want to read
+	 * @return result from reader file.
+	 */
 	public static String readFileToString(String filename) {
 		// create a string for the data to read
 		String result = "";
@@ -40,6 +54,13 @@ public class FileTask {
 		return result;
 	}
 
+	/**
+	 * Reading the task by using FileReader and append to StringBuilder.
+	 * 
+	 * @param filename
+	 *            is directory or filename that want to read
+	 * @return result from reader file.
+	 */
 	public static String readFileToStringBuilder(String filename) {
 		// create a string builder for the data to read
 		StringBuilder result = new StringBuilder();
@@ -71,6 +92,13 @@ public class FileTask {
 		return result.toString();
 	}
 
+	/**
+	 * Reading the task by using BufferredReader and append lines to String.
+	 * 
+	 * @param filename
+	 *            is directory or filename that want to read
+	 * @return result from reader file.
+	 */
 	public static String readFileByBufferedReader(String filename) throws FileNotFoundException {
 		// create a string for the data to read
 		String result = "";
@@ -99,6 +127,14 @@ public class FileTask {
 
 	}
 
+	/**
+	 * For running task
+	 * 
+	 * @param args
+	 *            is the arguments that want to run.
+	 * @throws FileNotFoundException
+	 *             for throws when have not file.
+	 */
 	public static void main(String[] args) throws FileNotFoundException {
 		// create a stopwatch
 		Stopwatch sw = new Stopwatch();
