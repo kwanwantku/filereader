@@ -1,7 +1,8 @@
 # Input-Output Tasks
 by Bill Gates
 I ran the tasks on a Mackbook pro late 2013 with Macos Sierra, 2.4Ghz and intel i core i5.
-##I got these results
+
+## I got these results
 
 Task						                                | Time
 ------------------------------------------------|--------------:
